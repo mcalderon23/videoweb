@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
 </head>
 <style>
     body {
-      margin: 0px;
+        margin: 0px;
     }
-    header {
-      background-color: #4158D0;
-      width: 100%;
-      height: 80px;
+
+    .header {
+        background-color: #4158D0;
+        width: 100%;
+        height: 80px;
     }
-    header img {
-      width: 200px;
-      margin-top: 10px;
-      margin-left: 10px;
+
+    .header__img {
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .header__menu{
+        margin-right: 20px;
+    }
+    .header__menu ul{
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        width: 100px;
+        text-align: right;
+        margin: 0 0 0 -14px;
+    }
+    .header__menu--profile{
+        margin-right: 8px;
+        width: 40px;
     }
     section {
         height: 200rem;
-      background-color: #4158D0;
-      background-image: linear-gradient(to bottom, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        background-color: #4158D0;
+        background-image: linear-gradient(to bottom, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     }
+</style>
 
-  </style>
 <body>
-    <header>
-        <img src="logo-platzi-video-BW2.png" alt="">
+    <header class="header">
+        <img class="header__img" src="logo-platzi-video-BW2.png" alt="">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <i class="fas fa-user-circle"></i>
+                Perfil
+                <ul>
+                    <li><a href="#">Cuenta</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <section></section>
 </body>
+
 </html>
