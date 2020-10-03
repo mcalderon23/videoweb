@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+}
+.header {
+    background-color: #21C08B;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img{
+    width: 200px;
+    margin-left: 30px;
+}
+.login{
+    background: linear-gradient(#4158D0,#C850C0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    min-height: calc(100vh - 200px); /*El valor minimo del alto de nuestra pantalla
+    vh=viewheight similar al %, es % a la vista del user, 200px para
+    darle mas espacio al login exeptuando al header y footer*/
+}
+.login__container{
+    background-color: rgba(255, 255, 255, 0.1);/*transparencia
+    al nuestro formulario*/
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 50rem;
+    width: 50%;
+
+}
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label{
+    font-size: 14px;
+
+}
+.login__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember-me a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.login__container--remember-me a:hover{
+    text-decoration: underline;
+}
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
