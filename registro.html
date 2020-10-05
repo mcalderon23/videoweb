@@ -1,68 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
 </head>
 <style>
-    body{
+    body {
+        font-family: 'Muli', sans-serif;
         margin: 0;
-        background: linear-gradient(#4158D0,#C850C0);
+        background-color: #560BAD;
+        background-image: linear-gradient(to bottom, #480CA8 0%, #560BAD 100%);
+        background-repeat: no-repeat;
+        height: 100vh;
     }
-    .header {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__img{
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 30px;
-}
-    .registro{
 
-        background-color: rgba(132, 35, 229, 0.26);
-        width: 80%;
-        border-radius: 25px;
-    }
-    .registro__container{
+    .header {
+        width: 100%;
+        height: 100px;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .registro__container img{
+
+    .header__img {
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .registro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        padding: 0 30px;
+    }
+
+    .registro__container {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        min-height: 30rem;
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px 0px rgb(26, 26, 26,60%);
+    }
+
+    .registro__container img {
         width: 60%;
         min-height: calc(100vh - 200px);
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border: 2px solid white;
+        background-color: rgba(158, 68, 247, 0.466);
     }
-    .registro__container--form{
-        width: 40%;
+
+    .registro__container--form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
     }
-    .registro__container--h2{
+
+    .registro__container--h2 {
+        color: rgb(65, 65, 65);
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .registro__container div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding: 0px 20px;
+        
+    }
+
+    .registro__container--form-input {
+        border-bottom: #b3b3b3 2px solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 3rem;
+        width: 100%;
+        font-family: 'Muli', sans-serif;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .registro__container--form-button {
+        background: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+        transition: 0.5s;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 25px;
         color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 50px;
+        letter-spacing: 1px;
+        margin: 3rem 0rem;
+    }
+
+    .registro__container--form-button:hover {
+        box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.678);
+        background: linear-gradient(to right, #8E54E9 0%, #4776E6  51%, #8E54E9  100%);
     }
 </style>
+
 <body>
     <header class="header">
-        <img class="header__img" src="logo-platzi-video-BW2.png" alt="">
+        <img class="header__img" src="designfast.png" alt="">
     </header>
     <section class="registro">
         <section class="registro__container">
-                <img src="2start61-03.png" />
+            <img src="2start61-03.png" />
             <div>
                 <h2 class="registro__container--h2">
-                    ¿Eres nuevo? Registrate :)
+                    ¿Eres nuevo? ¡Registrate! :)
                 </h2>
                 <form class="registro__container--form">
-                    <input class="registro__container--form-input" type="text" placeholder="Ingresa tu nombre">
-                    <input class="registro__container--form-input" type="text" placeholder="Ingresa tu email">
-                    <input class="registro__container--form-input" type="password" placeholder="Ingresa tu contraseña">
+                    <div><input class="registro__container--form-input" type="text" placeholder="Ingresa tu nombre"></div>
+                    <div><input class="registro__container--form-input" type="text" placeholder="Ingresa tu email"></div>
+                    <div><input class="registro__container--form-input" type="password" placeholder="Ingresa tu contraseña"></div>
+                    
                     <button class="registro__container--form-button">
-                        Quiero registrarme!
+                        ¡Quiero registrarme!
                     </button>
                 </form>
             </div>
         </section>
     </section>
 </body>
+
 </html>
